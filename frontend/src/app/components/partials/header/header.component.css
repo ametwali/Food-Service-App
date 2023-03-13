@@ -1,0 +1,66 @@
+header{
+  position: relative;
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid #e72929;
+}
+
+a{
+  color: #af1313;
+}
+
+a:hover{
+  background: #e72929;
+  color: white;
+  cursor: pointer;
+}
+
+.container{
+  margin: 0 auto;                     /*0 for top and bottom, auto for left and right*/
+  display: flex;
+  justify-content: space-between;     /*The "justify-content: space-between;" displays the flex items with space between the lines*/
+}
+
+a.logo{
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul{
+  display:flex;
+  list-style-type: none;              /*removing the bullet points*/
+  margin: 0;
+}
+
+ul a{                                 /*all the <a> tags inside the <ul> tag*/
+  padding: 1rem;
+  display: inline-block;              /*spaces out the links vertically*/
+}
+
+a span{                               /*our badge is a span inside the a tag*/
+  background: #ff4d4d;              /*background of the number is red*/
+  color: white;                     /*the text of the number is white*/
+  padding: 0.1rem 0.45rem;            /*0.1rem top and bottom, 0.45rem left and right */
+  border-radius: 100rem;              /*made the background color of the number rounded*/
+  font-size: 0.9rem;
+}
+
+.menu-container{
+  position: relative;
+}
+
+.menu{
+  position: absolute;                 /*made "John"->"Profile"->"Orders"->"Logout" vertically on top of each other*/
+  z-index: 1;
+  background: whitesmoke;           /*make that vertical have a different backgroun*/
+  display:none;                       /*not show the rest, only "John"*/
+}
+
+.menu-container:hover .menu{          /*menu-container while you are inside the menu*/
+  display: block;                     /*lets you see the rest, so all of John, Profile, Orders, Logout*/
+}
+
+.menu a{                              /*set the menu <a> tags*/
+  width: 100%;
+  min-width: 8rem;
+}

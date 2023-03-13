@@ -1,0 +1,30 @@
+<header>
+  <div class="container">
+    <a routerLink="/" class="logo">Food Mine!</a>   <!--usually this is href="", thats for switching "pages". While routerLink changes the "view" of the page instead-->
+    <nav>                                           <!--a set of navigation links-->
+      <ul>
+
+        <li>
+          <a routerLink="/login">Login</a>
+        </li>
+
+        <li class="menu-container">
+          <a routerLink="/dashboard">John</a>
+          <div class="menu">
+            <a routerLink="/profile">Profile</a>     <!--profile of the user-->
+            <a routerLink="/orders">Orders</a>
+            <a>Logout</a>
+          </div>
+        </li>
+
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>                      <!--if the cartQuanttiy is zero, show nothing-->
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+  </div>
+</header>

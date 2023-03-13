@@ -1,0 +1,60 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>                                                  <!--To show list of foods, "foods" came from home.component.ts-->
+  <li *ngFor="let food of foods">                     <!--"food" to represent each ELEMENT of "foods"-->
+                                                      <!--This is like saying to show each individual food from the list of all the foods-->
+                                                      <!--if this "*ngFor=let food for foods" wasn't there, the system wouldn't know "which food" it wants from the list of foods-->
+    <a routerLink="/food/{{food.id}}">
+        <img [src]="food.imageUrl" [alt]="food.name"> <!--want to show all the details of the food inside the <a>tag-->
+                                                      <!--can also show it as src={{"food.imageUrl"}}, no difference-->
+        <div class="content">
+
+          <div class="name">                          <!-- div class name to show the name of the food-->
+            {{food.name}}
+          </div>
+
+          <span class="favorite {{food.favorite?'':'not'}}"> <!--like if-else, is it a favorite food? (food.favorite?), if yes do nothing (''), otherwise (:) put not ('not')-->
+            ❤
+          </span>
+
+          <div class="stars">
+            <star-rating
+            [value]="food.stars"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="22px"
+            [readonly]="true">
+          </star-rating>
+          </div>
+
+          <div class="product-item-footer">
+
+            <div class="origin">
+              <span *ngFor="let origin of food.origins">
+                {{origin}}
+              </span>
+            </div>
+
+            <div class="cook-time">
+              <span>
+                🕒
+              </span>
+              {{food.cookTime}}
+            </div>
+
+            <div class="price">
+              <span>
+                {{food.price | currency}}
+              </span>
+            </div>
+
+
+          </div>
+
+
+        </div>
+    </a>
+  </li>
+
+</ul>
