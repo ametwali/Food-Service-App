@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&family=Press+Start+2P&display=swap";
+
 header{
   position: relative;
   background: white;
@@ -22,7 +24,9 @@ a:hover{
 }
 
 a.logo{
+  font-family: "Caveat", "Quicksand";
   font-weight: bold;
+  font-size: x-large;
   padding: 1rem;
 }
 
@@ -33,7 +37,7 @@ ul{
 }
 
 ul a{                                 /*all the <a> tags inside the <ul> tag*/
-  padding: 1rem;
+  padding: 1.3rem;
   display: inline-block;              /*spaces out the links vertically*/
 }
 
@@ -52,7 +56,7 @@ a span{                               /*our badge is a span inside the a tag*/
 .menu{
   position: absolute;                 /*made "John"->"Profile"->"Orders"->"Logout" vertically on top of each other*/
   z-index: 1;
-  background: whitesmoke;           /*make that vertical have a different backgroun*/
+  background: whitesmoke;           /*make that vertical have a different background*/
   display:none;                       /*not show the rest, only "John"*/
 }
 
