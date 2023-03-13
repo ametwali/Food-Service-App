@@ -1,5 +1,13 @@
 <app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title>
+<!-- <!--"visible" should show when the cart is null or undefined OR the length of the cart is NOT bigger than 0 --!> -->
+<app-not-found
+  [visible] = "!cart || !cart.items.length"
+  notFoundMessage = "Your Cart is Empty! :("
+  resetLinkText = "Go to Homepage"
+></app-not-found>
 
+
+<!-- When the cart is visible AND the number of items are over 0 -->
 <div *ngIf="cart && cart.items.length" class="container">
 <ul>
   <li *ngFor="let cartItem of cart.items">
