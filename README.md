@@ -1,6 +1,5 @@
-## Lessons
-1. Introduction to the course
-2. Install development tools
+To run project FOR NOW, go change directory to "frontend" by doing "cd frontend". Then go to console and type in "ng serve -o".
+
 3. Create Angular App
     1. Create project's folder
     2. Install @angular.cli
