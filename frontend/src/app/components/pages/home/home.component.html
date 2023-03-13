@@ -1,5 +1,9 @@
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-found
+  [visible]="!foods || !foods.length"
+  resetLinkText="Reset Search"
+></app-not-found>
 <ul>                                                  <!--To show list of foods, "foods" came from home.component.ts-->
   <li *ngFor="let food of foods">                     <!--"food" to represent each ELEMENT of "foods"-->
                                                       <!--This is like saying to show each individual food from the list of all the foods-->
