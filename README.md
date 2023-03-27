@@ -1,1 +1,10 @@
-To run project FOR NOW, go change directory to "frontend" by doing "cd frontend". Then go to console and type in "ng serve -o".
+*assuming you have already done npm install and angular setup
+
+
+To run frontend:
+- cd frontend
+- ng serve -o
+
+To run backend:
+- cd backend
+- npm start
