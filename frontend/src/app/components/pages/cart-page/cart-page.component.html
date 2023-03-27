@@ -14,8 +14,8 @@
     <div>
       <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name">
     </div>
-    <div>
-      <a routerLink="/food/{{cartItem.food.id}}">
+    <div >
+      <a class="food-link" routerLink="/food/{{cartItem.food.id}}">
         {{cartItem.food.name}}
       </a>
     </div>
@@ -30,7 +30,7 @@
       <option>5</option>
     </select>
     </div>
-    <div>
+    <div class="individual-price">
       {{cartItem.price | currency}}
     </div>
 
