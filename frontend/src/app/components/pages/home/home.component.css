@@ -10,13 +10,24 @@ ul{
 li a{
   height: 22.5rem;
   width: 20rem;
-  border: 1px solid whitesmoke;
+  border: 1px solid rgba(128, 128, 128, 0.568);
   border-radius: 1rem;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  color: #e72929;
+}
+
+.tags{
+  color: greenyellow;
+}
+
+.name{
+  color: red;
+}
+
+.favorite{
+  color: red;
 }
 
 li a:hover{
@@ -44,7 +55,7 @@ li a img{
 }
 
 .favorite.not{
-  color:grey;
+  color:#635e5e;
 }
 
 .stars{
@@ -63,7 +74,7 @@ li a img{
 
 .origins span{
   border-radius: 2rem;
-  background-color: whitesmoke;
+  background-color: grey;
   display: inline-block;
   font-size: 0.8rem;
   color: grey;
@@ -72,20 +83,27 @@ li a img{
   margin-top: 0.2rem;
 }
 
+.origin{
+  color: rgb(143, 61, 61);
+}
+
 .cook-time{
   font-size: 0.9rem;
   flex: 3;
   text-align: right;
+  color: rgb(147, 142, 142);
 }
 
 .price{
   position: absolute;
   bottom: 0;
   left: 0.9rem;
-  background: white;
+  background: black;
   padding: 0.3rem 100% 0 0;
-  color: #414141;
+  color: #cac6c6;
   margin-top: 0.7rem;
   font-size: 1.1rem;
+  font-weight: 100;
+  /* #cac6c6; */
 }
 
