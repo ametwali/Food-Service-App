@@ -16,8 +16,11 @@ button{
 
 body{
   margin: 0;
+  /* new color */
+  background-color: black;
 }
 
 a{
   text-decoration: none;
 }
+
